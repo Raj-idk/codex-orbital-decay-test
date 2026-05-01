@@ -1,0 +1,124 @@
+:root {
+  color-scheme: dark;
+  font-family:
+    Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  background: #05070d;
+  color: #edf7ff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+body {
+  background:
+    radial-gradient(circle at 50% 48%, rgba(17, 31, 45, 0.56), transparent 42rem),
+    linear-gradient(145deg, #05070d 0%, #09111c 46%, #070a13 100%);
+}
+
+#game {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+
+.hud {
+  position: fixed;
+  top: 18px;
+  left: 18px;
+  width: min(320px, calc(100vw - 36px));
+  padding: 16px;
+  border: 1px solid rgba(154, 211, 255, 0.22);
+  border-radius: 8px;
+  background: rgba(5, 10, 18, 0.72);
+  box-shadow: 0 18px 38px rgba(0, 0, 0, 0.28);
+  backdrop-filter: blur(12px);
+}
+
+.hud h1 {
+  margin: 0 0 12px;
+  font-size: 18px;
+  font-weight: 720;
+  letter-spacing: 0;
+}
+
+.hud dl {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin: 0;
+}
+
+.hud dl div {
+  min-width: 0;
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.045);
+}
+
+.hud dt {
+  margin: 0 0 5px;
+  color: #9fc5d8;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.hud dd {
+  margin: 0;
+  overflow-wrap: anywhere;
+  color: #ffffff;
+  font-variant-numeric: tabular-nums;
+  font-size: 19px;
+  font-weight: 760;
+}
+
+.state {
+  margin: 12px 0 0;
+  min-height: 20px;
+  color: #ffcf7b;
+  font-size: 13px;
+  font-weight: 680;
+}
+
+@media (max-width: 560px) {
+  .hud {
+    top: 10px;
+    left: 10px;
+    width: calc(100vw - 20px);
+    padding: 12px;
+  }
+
+  .hud h1 {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+
+  .hud dl {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 6px;
+  }
+
+  .hud dl div {
+    padding: 8px 6px;
+  }
+
+  .hud dt {
+    font-size: 9px;
+  }
+
+  .hud dd {
+    font-size: 14px;
+  }
+}
