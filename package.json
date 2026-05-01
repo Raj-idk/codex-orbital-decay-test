@@ -1,0 +1,14 @@
+{
+  "name": "orbital-decay-canvas",
+  "version": "1.0.0",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch --preserveWatchOutput",
+    "serve": "python3 -m http.server 5173"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}

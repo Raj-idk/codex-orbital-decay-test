@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Orbital Decay</title>
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+  <body>
+    <canvas id="game" aria-label="Orbital Decay game canvas"></canvas>
+
+    <aside class="hud" aria-label="Ship telemetry">
+      <h1>Orbital Decay</h1>
+      <dl>
+        <div>
+          <dt>Mass</dt>
+          <dd id="massValue">0.00</dd>
+        </div>
+        <div>
+          <dt>Speed</dt>
+          <dd id="speedValue">0.00</dd>
+        </div>
+        <div>
+          <dt>Altitude</dt>
+          <dd id="altitudeValue">0</dd>
+        </div>
+        <div>
+          <dt>Dust</dt>
+          <dd id="dustValue">0</dd>
+        </div>
+      </dl>
+      <p id="stateValue" class="state">Stable orbit</p>
+    </aside>
+
+    <script src="./dist/main.js"></script>
+  </body>
+</html>
